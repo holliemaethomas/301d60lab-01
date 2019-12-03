@@ -1,0 +1,45 @@
+#boxA {
+  background-color: gray;
+  margin: auto; 
+  
+}
+
+#boxB {
+  background-color: green;
+  outline-color: black;
+}
+
+#boxC {
+  background-color: rgb(30, 158, 158);
+  outline-color: black;
+}
+
+#boxD {
+  background-color: rgb(141, 93, 163);
+  outline-color: black;
+}
+
+#boxE {
+  background-color: rgb(32, 11, 70);
+  outline-color: black;
+}
+
+#boxF {
+  background-color: blue;
+  outline-color: black;
+}
+
+#boxG {
+  background-color: rgb(94, 23, 97);
+  outline-color: black;
+}
+
+#boxH {
+  background-color: rgb(185, 161, 212);
+  outline-color: black;
+}
+
+#boxI {
+  background-color: rgb(117, 170, 117);
+  outline-color: black;
+}
