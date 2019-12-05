@@ -1,45 +1,27 @@
-#boxA {
-  background-color: gray;
-  margin: auto; 
-  
+
+div {
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px;
+  text-align: center;
 }
 
-#boxB {
-  background-color: green;
-  outline-color: black;
+div:nth-child(1) {
+  height: 75px;
+  line-height: 75px;
 }
 
-#boxC {
-  background-color: rgb(30, 158, 158);
-  outline-color: black;
+div:nth-child(n+2):nth-child(-n + 4) {
+  height: 150px;
+  line-height: 150px;
 }
 
-#boxD {
-  background-color: rgb(141, 93, 163);
-  outline-color: black;
+div:nth-child(n+5):nth-child(-n + 8) {
+  height: 120px;
 }
 
-#boxE {
-  background-color: rgb(32, 11, 70);
-  outline-color: black;
-}
-
-#boxF {
-  background-color: blue;
-  outline-color: black;
-}
-
-#boxG {
-  background-color: rgb(94, 23, 97);
-  outline-color: black;
-}
-
-#boxH {
-  background-color: rgb(185, 161, 212);
-  outline-color: black;
-}
-
-#boxI {
-  background-color: rgb(117, 170, 117);
-  outline-color: black;
+@media (min-width: 768px) {
+  div:nth-child(2) :nth-child(2) {
+    height: 600px;
+  }
 }
