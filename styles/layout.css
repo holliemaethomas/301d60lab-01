@@ -1,0 +1,33 @@
+
+
+div {
+  float: left;
+}
+
+div:nth-child(n + 5):nth-child(-n + 8) {
+  width: 50%;
+}
+
+@media(min-width: 768px) {
+
+  body {
+    width: 960px;
+  }
+
+  div:nth-child(2) {
+    width: 200px;
+    height: 600px;
+  }
+  div:nth-child(3), div:nth-child(4) {
+    width: 380px;
+  }
+  div:nth-child(n + 5):nth-child(-n + 8) {
+    width: 190px;
+  }
+  div:nth-child(9) {
+    width: 760px;
+  }
+
+}
+
+/* watched demo again, followed along */
