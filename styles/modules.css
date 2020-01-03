@@ -1,27 +1,39 @@
 
-div {
-  height: 50px;
-  border: 1px solid black;
-  line-height: 50px;
-  text-align: center;
+nav {
+  height: 25px;
+  left:0;
+  line-height: 25px;
+  position:fixed;
+  top:0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+nav ul {
+  background: #555;
+  list-style-type: none;
+  margin:0;
+  padding:0;
 }
 
-div:nth-child(1) {
-  height: 75px;
-  line-height: 75px;
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .5em;
+  text-align:center;
+  width: 100px;
 }
 
-div:nth-child(n+2):nth-child(-n + 4) {
-  height: 150px;
-  line-height: 150px;
+nav ul li:hover {
+  background: #ccc;
 }
 
-div:nth-child(n+5):nth-child(-n + 8) {
-  height: 120px;
+nav ul li a {
+  color: #fff;
+  text-decoration:none;
 }
 
-@media (min-width: 768px) {
-  div:nth-child(2) :nth-child(2) {
-    height: 600px;
-  }
+nav ul li:hover a {
+  color: #555;
+}
+  
 }

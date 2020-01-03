@@ -1,33 +1,179 @@
-
+section {
+  overflow: auto;
+  margin: 0 auto;
+  display: table;
+}
 
 div {
+  margin: auto;
+  text-align: center;
+}
+
+#alpha {
+  height: 75px;
+  width: 480px;
+  margin-top: 20px;
+  line-height: 75px;
+}
+
+#bravo {
+  height: 150px;
+  width: 480px;
+  line-height: 150px;
+}
+
+#charlie {
+  height: 125px;
+  width: 480px;
+  line-height: 125px;
+}
+
+#delta {
+  height: 125px;
+  width: 480px;
+  line-height: 125px;
+}
+
+#echo {
+  height: 250px;
+  width: 240px;
+  display: inline-block;
+  /* display: block; */
+  line-height: 250px;
+  justify-content: center;
+}
+
+#foxtrot {
+  height: 250px;
+  width: 240px;
+  line-height: 250px;
+  display: inline-block;
+  /* float: right; */
+  justify-content: center; 
   float: left;
 }
 
-div:nth-child(n + 5):nth-child(-n + 8) {
+#golf {
+  height: 250px;
+  width: 240px;
+  display: inline-block;
+  line-height: 250px;
+  float: left;
+}
+
+#hotel {
+  height: 250px;
+  width: 240px;
+  display: inline-block;
+  /* float: right; */
+  line-height: 250px;
+  float: left;
+}
+
+#india {
+  height: 80px;
+  width: 480px;
+  line-height: 80px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+/* #boxFour {
+  width: 480px;
+  height: 500px;
+}
+#boxFour div {
+  display: inline-block;
+  height: 250px;
+  line-height: 250px;
   width: 50%;
-}
+  margin: 0;
 
-@media(min-width: 768px) {
+} */
+@media( min-width: 960px ) {
 
-  body {
+  section {
+    display:table;
+  }
+
+  div {
+    /* float:left; */
+    margin: 0;
+  }
+  #alpha {
+    height: 100px;
     width: 960px;
+    margin-top: 20px;
+    line-height: 100px;
+    background-color: yellow;
   }
-
-  div:nth-child(2) {
-    width: 200px;
+  
+  #bravo {
     height: 600px;
+    width: 200px;
+    float: left;
+    line-height: 600px;
+    background-color: wheat;
   }
-  div:nth-child(3), div:nth-child(4) {
+  
+  
+  #charlie {
+    height: 200px;
     width: 380px;
+    float: left;
+    line-height: 200px;
+    background-color: teal;
   }
-  div:nth-child(n + 5):nth-child(-n + 8) {
+  
+  #delta {
+    height: 200px;
+    width: 380px;
+    float: left;
+    line-height: 200px;
+    background-color: tomato;
+  }
+  
+  #echo {
+    height: 250px;
     width: 190px;
+    display: inline-block;
+    float: left;
+    line-height: 250px;
+    background-color: royalblue;
   }
-  div:nth-child(9) {
+  
+  #foxtrot {
+    display: inline-block;
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    float: left;
+    background-color: slateblue;
+  }
+  
+  #golf {
+    display: inline-block;
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    float: left;
+    background-color: lawngreen;
+  }
+  
+  #hotel {
+    display: inline-block;
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    float: left;
+    background-color: lightsalmon;
+  }
+  
+  #india {
+    height: 150px;
+    line-height: 150px;
     width: 760px;
+    float: left;
+    background-color: maroon;
   }
-
 }
-
-/* watched demo again, followed along */
